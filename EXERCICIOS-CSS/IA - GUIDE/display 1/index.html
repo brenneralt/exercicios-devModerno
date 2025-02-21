@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando block e inline</title>
+    <style>
+        div {
+            display: block;
+            background-color: red;
+            width: 200px;
+            /* Novo */
+            height: 50px;
+            /* Novo */
+            margin: 10px 0;
+            /* Novo */
+        }
+
+        span {
+            display: inline;
+            background-color: greenyellow;
+            padding: 5px;
+            /* Funciona em inline */
+            margin: 20px 0;
+            /* Margin vertical não funciona em inline */
+            /* width: 100px;   Ignorado em inline */
+            /* height: 50px;   Ignorado em inline */
+        }
+
+        div,
+        span {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Div 1</div>
+    <div>Div 2</div>
+    <span>Span 1</span>
+    <span>Span 2</span>
+</body>
+
+</html>

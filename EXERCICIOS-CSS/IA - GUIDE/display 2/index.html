@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu com inline</title>
+    <style>
+        li {
+            list-style: none;
+            display: inline-block;
+            /* Alterado para inline-block */
+            padding: 20px;
+            margin: 0 10px;
+            /* Espaçamento entre itens */
+        }
+
+        li {
+            transition: background-color 0.3s;
+            /* Novo */
+        }
+
+        li:hover {
+            background-color: rgba(0, 255, 255, 0.3);
+            /* Cor mais visível */
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            /* Centraliza os itens */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Sobre</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
